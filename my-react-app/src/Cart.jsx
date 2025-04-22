@@ -32,7 +32,7 @@ export default function Cart(){
 
             </div>
             <div className="checkout">
-                <h4>Total Price: {totalPrice}</h4>
+                <h4>Total Price: ${totalPrice}</h4>
                 <button>checkout</button>
             </div>
          

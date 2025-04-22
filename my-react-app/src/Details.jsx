@@ -16,14 +16,13 @@ export function Details(){
 
     return(
         <>
-            <div className="grid">
-            <div className="card">
+            <div className="detail">
+            <div className="card detailCard">
                 <img src={p[0].image}/>
                 <h3>{p[0].title}</h3>
                 <h4>${p[0].price}</h4>
                 <p>{p[0].description}</p>
-                <h5>Rating: </h5>
-                <p>{p[0].rating.rate}</p>
+                <h4>Rating: {p[0].rating.rate}</h4>
                 <button disabled={checkPresentOrNot(p[0].id) ? true: false} onClick={() => addToCart(p[0].id)}>{checkPresentOrNot(p[0].id) ? 'Present in Cart' : 'Add to Cart'}</button>
             </div>
             </div>
